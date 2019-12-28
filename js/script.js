@@ -1,7 +1,6 @@
 // audio player.. by Nikhil Roy Dev
 // contact +8801774372294;
-// don't copy the code without credit me;
-
+// don't copy all the code without credit me;
 'use strict';
 document.title = 'Music Player by Nikhil Roy';
 let play = document.querySelector('#play');
