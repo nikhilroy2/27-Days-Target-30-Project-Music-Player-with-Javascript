@@ -12,9 +12,18 @@ let duration = document.querySelector('#duration');
 let d_text = document.querySelector('#d_text');
 let circleRound = document.querySelector('#circleRound');
 let songTitle = document.querySelector('.songTitle');
-let songsList = ["Balam 3 (1).mp3", "Balam 3 (2).mp3", "Balam 3 (3).mp3",
-"Balam 3 (4).mp3", "Balam 3 (5).mp3", "Balam 3 (6).mp3", "Balam 3 (1).mp3",
-"Balam 3 (7).mp3", "Balam 3.mp3","band (5).mp3", "Oxygen-Balam.mp3"];
+let songsList = [
+  "Tui_aka_aka_bose_keno_acho.mp3", 
+  "Chokher_arale_sopne_jorale.mp3",
+  "Khache_aso_na.mp3",
+  "Pothe_hete_hete_khuje_berai.mp3",
+  "Somoy_katena_dore_theko_na.mp3",
+  "Jeona_jeona_avabe_chole.mp3",
+  "Oi_akasher_bukhe.mp3",
+  "Ratee_adhare_ojana_choya.mp3",
+  "Amar_shathe.mp3",
+  "Tomay_ami_nijer_kore.mp3"
+];
 let songmp3 = new Audio();
 let currentSong = 0;
 
