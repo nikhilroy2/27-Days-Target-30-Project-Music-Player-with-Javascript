@@ -169,3 +169,14 @@ body{
         }
     }
 }
+.project{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 8px;
+    border: solid currentColor 1px;
+    border-bottom: 0px;
+    z-index: 333333333;
+    color: white;
+    background: crimson;
+}
