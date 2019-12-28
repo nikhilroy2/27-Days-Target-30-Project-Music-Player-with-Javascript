@@ -50,7 +50,7 @@ function previousSong(){
 }
 function songLoad(){
     songmp3.play();
-    songmp3.src = '../songs/' + songsList[currentSong];
+    songmp3.src='../songs/'+songsList[currentSong];
 }
 
 window.onload = function(){
