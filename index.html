@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nl_wrapper">
+        <h2 style="font-family: cursive;">Music Player</h2>
+        <h3 class="songTitle">Here is song title
+        </h3>
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/18/17/equalizer-153212_960_720.png" alt="">
+        <div class="duration_field">
+            <span onclick="prevRate()">&#10094;</span>
+            <input type="range" name=""  id="duration">
+            <span onclick="nextRate()">&#10095;</span>
+
+
+            <div class="duration_count">
+                <svg>
+                    <circle cx="41" cy="37" r="25"   ></circle>
+                    <circle id="circleRound" cx="41" cy="37" r="25"  ></circle>
+                </svg>
+
+                <span id="d_text">00:00</span>                
+            </div>
+        </div>
+        <div class="play_field">
+            <span id="previous" onclick="previousSong()">&#10094;</span>
+            <span id="play">&#9658;</span>
+            <span id="next" onclick="nextSong()">&#10095;</span>
+
+        </div>
+        <div class="volume_field">
+          <span >&#x1F50A;</span>
+           <input type="range" name="" id="volume">
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
