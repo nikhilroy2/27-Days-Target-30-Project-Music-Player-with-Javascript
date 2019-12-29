@@ -100,9 +100,6 @@ let setd_text = setInterval(function(){
    
     d_text.innerHTML = ((d_min < 10) ? '0' + d_min : d_min)  +' : '
                      + ((d_sec < 10) ? '0' + d_sec : d_sec) ;
-    
-
-
 
 
 }, 1000);
