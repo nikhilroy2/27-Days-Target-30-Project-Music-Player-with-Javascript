@@ -51,11 +51,13 @@ function previousSong(){
 function songLoad(){
     songmp3.play();
     songmp3.src='./songs/'+songsList[currentSong];
+    // be sure that ../songs is too back so ./songs
 }
 
 window.onload = function(){
     songmp3.pause();
     songmp3.src = './songs/' + songsList[currentSong];
+
 }
 
 
@@ -106,6 +108,10 @@ let setd_text = setInterval(function(){
 }, 1000);
 
 setInterval(function(){
-    circleRound.setAttribute('style', `stroke-dashoffset: calc(400 - (${songmp3.currentTime / 1.75}))`); // it has math bug/
-   // console.log( 400 - (songmp3.currentTime % 100));
+    circleRound.setAttribute('style', `stroke-dashoffset: calc(400 - (${songmp3.currentTime/ songmp3.duration * 157}))`); 
+    /* math bug has been fixed, 
+    idea I have to decrease dashoffset to
+     243, so 400-157= 243 and its decrease the currentTime 
+     of songmp3.currentTime/songmp3.duration */
+   console.log(400 - ((songmp3.currentTime/ songmp3.duration) * 157))
 }, 1000)
